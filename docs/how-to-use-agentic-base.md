@@ -13,18 +13,16 @@ Agentic Base is a lean, 14-file kit that supercharges Claude Code CLI. It provid
 
 ## Quick Start (2 Steps)
 
-### Step 1: Copy to your project
+### Step 1: Initialize in your project
 
 ```bash
-# From Agentic Base repo
-cp -r .claude /path/to/your-project/
-cp CLAUDE.md /path/to/your-project/
+cd /path/to/your-project
+npx agentic-base init
 ```
 
 ### Step 2: Run Claude Code
 
 ```bash
-cd /path/to/your-project
 claude
 ```
 

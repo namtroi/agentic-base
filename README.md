@@ -29,7 +29,7 @@ Once installed, just run `claude` and enjoy your highly-structured agentic workf
 
 ## Read More
 
-See the [Detailed Guide](how-to-use-agentic-base.md) for customizing the kit or learning advanced usage.
+See the [Detailed Guide](docs/how-to-use-agentic-base.md) for customizing the kit or learning advanced usage.
 
 ## License
 MIT
