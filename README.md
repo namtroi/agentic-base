@@ -1,35 +1,76 @@
-# Agentic Base
+<div align="center">
+  <h1>🚀 @namtroi/agentic-base</h1>
+  <p><strong>The definitive Agentic Workflow Kit for Anthropic Claude Code CLI.</strong></p>
+  <p>Add guardrails, multi-agent routing, and intelligent context-awareness to your AI coding sessions in seconds.</p>
 
-A lean, robust AI coding kit built to supercharge the [Claude Code CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview). 
+  [![npm version](https://badge.fury.io/js/@namtroi%2Fagentic-base.svg)](https://badge.fury.io/js/@namtroi%2Fagentic-base)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+</div>
 
-Agentic Base provides:
-- **Auto-detected project context** (git, framework, runtime)
-- **Security gates** blocking sensitive files + bloated directories
-- **4 specialized agents** (planner, tester, reviewer, debugger)
-- **Three Pillars enforcement** (Document-Driven, Test-Driven, Observability-Driven)
-- **Lifecycle hooks** tracking edit quality
+---
 
-## Setup
+## The Problem: AI Coding Without Guardrails
 
-Navigate to your project folder and run:
+Using the raw [Claude Code CLI](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview) is powerful, but it often leads to:
+- 💸 **Wasted Tokens:** Claude aggressively reads `node_modules`, `dist/`, or `.git/`, eating up your limits.
+- 🔓 **Security Risks:** Accidental exposure of your `.env`, `.pem` keys, and credentials into AI context.
+- 🍝 **Spaghetti Code:** AI outputting code without structure, tests, or documentation updates.
+
+## The Solution: Agentic Base
+
+**Agentic Base** is a highly-optimized, 14-file configuration kit that seamlessly injects specialized agents, security gates, and structured workflows straight into your terminal-based AI environment.
+
+### 🌟 Core Features
+
+- 🛡️ **Zero-Leak Privacy Gate:** Cryptographically blocks the CLI from reading or editing `.env`, keys, or credentials without your explicit, mid-session Y/N approval.
+- 🧹 **Scout Gate (Token Saver):** Automatically ignores bloated directories, slashing token burn and keeping the AI context window laser-focused.
+- 🧠 **Auto-Context Bootstrapper:** Instantly detects your current framework (Next.js, Vite, etc.), runtime, and Git branch to spoon-feed optimal context to Claude on startup.
+- 🤖 **4 Specialized Sub-Agents:** Ready-to-use personas: `planner`, `tester`, `reviewer`, and `debugger`. Invoke them naturally: *"Use the tester agent to cover this component."*
+- 🏛️ **The Three Pillars Enforcement:** Built-in lifecycle hooks ensure strict adherence to Document-Driven (DDD), Test-Driven (TDD), and Observability-Driven (ODD) development. Claude will literally remind you if tests aren't written!
+
+---
+
+## 🚀 Quick Start (Zero Config)
+
+Run this once inside any project repository:
 
 ```bash
-npx agentic-base init
+npx @namtroi/agentic-base init
 ```
 
-This will cleanly scaffold a `.claude/` directory and a `CLAUDE.md` standard instruction file into your project.
+*This cleanly scaffolds the `.claude/` directory and injects the `CLAUDE.md` golden prompt.*
 
-Once installed, just run `claude` and enjoy your highly-structured agentic workflow!
+Then, just start coding as usual:
 
-## Features
+```bash
+claude
+```
 
-- **Privacy Gate**: Protects your `.env`, `.pem`, and keys.
-- **Scout Gate**: Keeps Claude out of `node_modules`, `dist/`, etc., saving context window length.
-- **Micro-Orchestration**: Direct routing via CLI for `/plan`, testing feedback loops, and architectural visualizations (`/preview`).
+Claude will automatically ingest the new structured rules and optimized context.
 
-## Read More
+---
 
-See the [Detailed Guide](docs/how-to-use-agentic-base.md) for customizing the kit or learning advanced usage.
+## 🛠 Workflow Superpowers
 
-## License
-MIT
+With Agentic Base installed, you unlock micro-orchestration commands directly in Claude Code:
+
+- **`/plan Add OAuth2 authentication`**
+  Forces Claude to halt, research your stack, and output a structured `plan.md` (complete with test scope and docs impact) *before* writing any code.
+- **`/preview --diagram payment architecture`**
+  Instantly generates Mermaid or ASCII visual diagrams to explain complex systemic changes before you approve them.
+
+---
+
+## 📚 Documentation
+
+Ready to customize hooks, write your own agents, or block specific directories?
+
+👉 **[Read the Full Documentation Guide](docs/how-to-use-agentic-base.md)**
+
+---
+
+## 🤝 Open Source
+
+Built with ❤️ for the AI developer community.
+
+**License:** MIT
