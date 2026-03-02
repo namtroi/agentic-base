@@ -1,0 +1,29 @@
+{
+  "name": "agentic-base",
+  "version": "1.0.0",
+  "description": "A lean, 3-pillar (DDD, TDD, ODD) AI coding kit for Claude Code CLI",
+  "main": "bin/cli.js",
+  "bin": {
+    "agentic-base": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "bin/",
+    "template/"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "ai",
+    "agentic",
+    "cli"
+  ],
+  "author": "namtroi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/namtroi/agentic-base.git"
+  }
+}
