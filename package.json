@@ -2,9 +2,9 @@
   "name": "agentic-base",
   "version": "1.0.0",
   "description": "A lean, 3-pillar (DDD, TDD, ODD) AI coding kit for Claude Code CLI",
-  "main": "bin/cli.js",
+  "main": "bin/cli.cjs",
   "bin": {
-    "agentic-base": "./bin/cli.js"
+    "agentic-base": "./bin/cli.cjs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
