@@ -1,6 +1,6 @@
 {
   "name": "@namtroi/agentic-base",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lean, 3-pillar (DDD, TDD, ODD) AI coding kit for Claude Code CLI",
   "main": "bin/cli.cjs",
   "bin": {
